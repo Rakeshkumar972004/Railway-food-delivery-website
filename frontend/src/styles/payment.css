@@ -1,0 +1,397 @@
+/* ========================================
+   Payment Page Styles (RailRecipe Design)
+   ======================================== */
+
+.payment-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+/* Payment Header Banner */
+.payment-header {
+  background: linear-gradient(135deg, #ffb300 0%, #ffa500 100%);
+  padding: 32px 16px;
+  margin: 0 -12px 24px -12px;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 0 12px 12px;
+}
+
+.payment-header h1 {
+  margin: 0 0 6px 0;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.payment-header p {
+  margin: 0;
+  font-size: 13px;
+  opacity: 0.95;
+}
+
+/* Payment Card */
+.payment-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 16px;
+}
+
+.payment-card h2 {
+  margin: 0 0 16px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+/* Order Summary Section */
+.payment-summary {
+  background: #fafafa;
+  border: 1px solid #f0f0f0;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.payment-summary h3 {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.payment-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.payment-item:last-child {
+  border-bottom: none;
+}
+
+.payment-item span:first-child {
+  color: #333;
+  font-weight: 500;
+}
+
+.payment-item span:last-child {
+  color: #666;
+}
+
+/* Price Breakdown */
+.price-breakdown {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 2px solid #eee;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.price-row.total {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffb300;
+  border-top: 1px solid #eee;
+  padding-top: 12px;
+  margin-top: 8px;
+}
+
+/* Payment Method Selection */
+.payment-methods {
+  background: #fafafa;
+  border: 1px solid #f0f0f0;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.payment-methods h3 {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.method-option {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 10px;
+  background: #fff;
+  border: 2px solid #eee;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.method-option:hover {
+  border-color: #ffb300;
+  box-shadow: 0 2px 8px rgba(255, 179, 0, 0.1);
+}
+
+.method-option input[type="radio"] {
+  margin-right: 10px;
+  cursor: pointer;
+  accent-color: #ffb300;
+}
+
+.method-option label {
+  flex: 1;
+  cursor: pointer;
+  font-weight: 500;
+  color: #333;
+}
+
+.method-icon {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+/* Form Groups */
+.form-group {
+  margin-bottom: 12px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+  background: #fafafa;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #ffb300;
+  background: #fff;
+}
+
+/* Payment Buttons */
+.payment-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.btn-pay {
+  flex: 1;
+  padding: 14px 16px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background: #ffb300;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-pay:hover {
+  background: #ff9800;
+}
+
+.btn-pay:active {
+  transform: scale(0.98);
+}
+
+.btn-pay[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background: #ddd;
+}
+
+.btn-cancel {
+  flex: 1;
+  padding: 14px 16px;
+  font-size: 15px;
+  font-weight: 600;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f0f0f0;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-cancel:hover {
+  background: #e8e8e8;
+  border-color: #ccc;
+}
+
+/* Security Info */
+.security-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+  border-radius: 8px;
+  color: #155724;
+  font-size: 12px;
+  margin-top: 16px;
+}
+
+.security-icon {
+  font-size: 16px;
+}
+
+/* Error Message */
+.error-message {
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-size: 13px;
+}
+
+/* ========================================
+   Responsive Design
+   ======================================== */
+
+@media (max-width: 768px) {
+  .payment-header {
+    padding: 24px 14px;
+    margin: 0 -12px 18px -12px;
+  }
+
+  .payment-header h1 {
+    font-size: 24px;
+  }
+
+  .payment-card {
+    padding: 16px;
+  }
+
+  .payment-card h2 {
+    font-size: 18px;
+  }
+
+  .payment-actions {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .payment-container {
+    padding: 0 10px;
+  }
+
+  .payment-header {
+    padding: 18px 12px;
+    margin: 0 -10px 16px -10px;
+    border-radius: 0 0 8px 8px;
+  }
+
+  .payment-header h1 {
+    font-size: 20px;
+  }
+
+  .payment-header p {
+    font-size: 12px;
+  }
+
+  .payment-card {
+    padding: 12px;
+    margin-bottom: 12px;
+  }
+
+  .payment-card h2 {
+    font-size: 16px;
+  }
+
+  .payment-summary,
+  .payment-methods {
+    padding: 12px;
+  }
+
+  .payment-item {
+    padding: 8px 0;
+    font-size: 13px;
+  }
+
+  .price-row {
+    font-size: 12px;
+  }
+
+  .price-row.total {
+    font-size: 16px;
+  }
+
+  .method-option {
+    padding: 10px;
+    margin-bottom: 8px;
+  }
+
+  .method-icon {
+    font-size: 18px;
+  }
+
+  .form-group input,
+  .form-group select {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .btn-pay,
+  .btn-cancel {
+    padding: 12px 12px;
+    font-size: 14px;
+  }
+
+  .payment-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .security-info {
+    font-size: 11px;
+    padding: 10px;
+  }
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}

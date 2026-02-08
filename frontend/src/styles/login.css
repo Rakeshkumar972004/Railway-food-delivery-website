@@ -1,0 +1,103 @@
+/* Remove default body scroll */
+
+/* =========================
+   Fixed Navbar
+========================= */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: #ffffff;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   Login Page Layout
+========================= */
+
+.login-container {
+  position: fixed;          /* full page fixed */
+  top: 70px;                /* below navbar */
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("../assets/bg-image.png");
+  background-size: cover;
+  background-position: center 30%;
+  background-repeat: no-repeat;
+}
+
+/* Dark overlay */
+
+.login-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+}
+
+/* =========================
+   Login Card
+========================= */
+
+.login-card {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+  max-width: 420px;
+  padding: 28px;
+
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title */
+
+.login-title {
+  margin-bottom: 18px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Inputs */
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: #ffb300;
+}
+
+/* Button */
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #ffb300;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}

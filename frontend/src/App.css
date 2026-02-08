@@ -1,0 +1,200 @@
+/* ===== GLOBAL ===== */
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: #f2f5f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== APP LAYOUT ===== */
+.app-bg {
+  min-height: 100vh;
+  background: #f2f5f9;
+  position: relative;
+}
+
+.overlay {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* ===== HEADER ===== */
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-radius: 10px;
+  background: rgba(10, 10, 10, 0.85);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  margin-bottom: 18px;
+}
+
+.nav-title {
+  font-size: 28px;
+  font-weight: 900;
+  color: #ffd88c;
+  letter-spacing: 0.6px;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  font-size: 22px;
+  background: transparent;
+  color: #ffd88c;
+  border: 2px solid rgba(255, 216, 140, 0.18);
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.nav-menu:hover {
+  background: rgba(255, 216, 140, 0.08);
+}
+
+/* ===== SIDE MENU ===== */
+.side-menu {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  width: 240px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: -6px 8px 22px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 14px;
+  z-index: 999;
+}
+
+.side-menu a {
+  padding: 12px;
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.side-menu a:hover {
+  background: #fff3d6;
+  color: #ff9800;
+}
+
+/* ===== CONTAINER GRID ===== */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+/* ===== CARD ===== */
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+/* ===== CARD HEADER ===== */
+.card-header {
+  background: linear-gradient(180deg, #243b55, #141e30);
+  color: #fff;
+  padding: 12px 16px;
+  font-weight: bold;
+}
+
+/* ===== CARD BODY ===== */
+.card-body {
+  padding: 20px;
+}
+
+/* ===== INPUT ===== */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  padding: 10px 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-blue {
+  background: #1e88e5;
+  color: #fff;
+}
+
+.btn-green {
+  background: #26a69a;
+  color: #fff;
+}
+
+.btn-orange {
+  background: #fb8c00;
+  color: #fff;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+/* ===== LIST ITEMS ===== */
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.list-item:last-child {
+  border-bottom: none;
+}
+
+/* ===== STATUS TAG ===== */
+.status {
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.status-preparing {
+  background: #ffd54f;
+}
+
+.status-success {
+  background: #66bb6a;
+  color: #fff;
+}
+
+/* ===== TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+th {
+  background: #f4f6f8;
+}

@@ -1,0 +1,173 @@
+/* ========================================
+   Food Menu Styles (RailRecipe Design)
+   ======================================== */
+
+.menu-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+/* Menu Header */
+.menu-header {
+  background: linear-gradient(135deg, #ffb300 0%, #ffa500 100%);
+  padding: 28px 16px;
+  margin: 0 -12px 20px -12px;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 0 12px 12px;
+}
+
+.menu-header h1 {
+  margin: 0 0 8px 0;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.menu-header p {
+  margin: 0;
+  font-size: 13px;
+  opacity: 0.95;
+}
+
+/* Menu List Container */
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px 0;
+}
+
+/* Food Card Item */
+.food-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 14px;
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  gap: 12px;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.food-card:hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
+}
+
+/* Food Info */
+.food-info {
+  flex: 1;
+  text-align: left;
+}
+
+.food-card h4 {
+  margin: 0 0 4px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.food-card .price {
+  display: block;
+  font-size: 14px;
+
+.food-card.highlight {
+  border: 2px solid #ffb300;
+  background: linear-gradient(90deg, rgba(255,179,0,0.06), #ffffff);
+  transform: translateY(-4px);
+}
+  font-weight: 600;
+  color: #ffb300;
+}
+
+/* Order Button */
+.btn-order {
+  padding: 10px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background: #ffb300;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  white-space: nowrap;
+}
+
+.btn-order:hover {
+  background: #ff9800;
+}
+
+.btn-order:active {
+  transform: scale(0.98);
+}
+
+/* ========================================
+   Responsive Design
+   ======================================== */
+
+@media (max-width: 768px) {
+  .menu-header {
+    padding: 22px 14px;
+    margin: 0 -12px 16px -12px;
+  }
+
+  .menu-header h1 {
+    font-size: 22px;
+  }
+
+  .food-card {
+    padding: 12px 12px;
+  }
+
+  .food-card h4 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-container {
+    padding: 0 10px;
+  }
+
+  .menu-header {
+    padding: 18px 12px;
+    margin: 0 -10px 14px -10px;
+    border-radius: 0 0 8px 8px;
+  }
+
+  .menu-header h1 {
+    font-size: 20px;
+  }
+
+  .menu-header p {
+    font-size: 12px;
+  }
+
+  .menu-list {
+    gap: 8px;
+  }
+
+  .food-card {
+    padding: 10px 10px;
+    gap: 8px;
+  }
+
+  .food-card h4 {
+    font-size: 14px;
+  }
+
+  .food-card .price {
+    font-size: 13px;
+  }
+
+  .btn-order {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
