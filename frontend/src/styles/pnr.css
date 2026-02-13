@@ -10,6 +10,7 @@
   border-radius: 0;
   color: #fff;
   box-shadow: 0 8px 24px rgba(255, 179, 0, 0.2);
+  
 }
 
 .hero-content {
@@ -20,6 +21,7 @@
   max-width: 980px;
   background-color: #ffa500;
   margin: 0 auto;
+  
 }
 
 .hero-text {
